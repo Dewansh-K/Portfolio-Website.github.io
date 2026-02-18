@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dewansh · Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <!-- header / navigation -->
+  <header class="site-header">
+    <div class="container header-flex">
+      <a href="#hero" class="logo" aria-label="Dewansh, back to top">DEWANSH</a>
+      <nav class="main-nav" aria-label="primary navigation">
+        <ul class="nav-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- theme toggle button (dark/light) – vanilla js -->
+      <button id="theme-toggle" class="theme-toggle" aria-label="switch theme" title="switch theme">
+        <span class="light-icon">☀️</span>
+        <span class="dark-icon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    
+
+    <!-- HERO SECTION -->
+
+    <section id="hero" class="hero section">
+      <div class="container">
+        <div class="hero-content fade-in">
+          <div class="hero-text-block">
+            <h1>Dewansh<span class="period">.</span></h1>
+            <p class="hero-subhead">BS in AI & Cybersecurity · IIT Patna</p>
+            <p class="hero-tagline">Building digital roots with clean code.</p>
+            <a href="#projects" class="btn btn-primary">See Work ↓</a>
+          </div>
+          <div class="hero-image" aria-hidden="true">
+            <img src="https://static.vecteezy.com/system/resources/previews/006/963/890/non_2x/illustration-of-anonymous-hacker-wear-vendetta-mask-and-hoodie-concept-in-cartoon-free-vector.jpg" 
+                 alt="Anonymous hacker illustration" 
+                 class="hacker-img"
+                 loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about section">
+      <div class="container">
+        <h2 class="section-title fade-in">About</h2>
+        <div class="about-card fade-in">
+          <p>I’m <strong>Dewansh</strong>, currently pursuing a <strong>BS in Artificial Intelligence & Cybersecurity</strong> from <strong>Indian Institute of Technology Patna</strong>. I love crafting minimal, responsive interfaces and understanding how data moves through secure systems. This portfolio reflects my approach: clean, semantic, and user‑first.</p>
+          <p class="about-secondary">Outside code, I look for Hackathons and contribute to open‑source docs.</p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- SKILLS SECTION -->
+
+    <section id="skills" class="skills section">
+      <div class="container">
+        <h2 class="section-title fade-in">Skills</h2>
+        <ul class="skills-grid">
+          <li class="skill-item fade-in">Python</li>
+          <li class="skill-item fade-in">NumPy</li>
+          <li class="skill-item fade-in">OOP</li>
+          <li class="skill-item fade-in">HTML5</li>
+          <li class="skill-item fade-in">CSS3</li>
+          <li class="skill-item fade-in">JavaScript</li>
+          <li class="skill-item fade-in">React</li>
+          <li class="skill-item fade-in">Node.js</li>
+          <li class="skill-item fade-in">MongoDB</li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <!-- PROJECTS SECTION  -->
+
+    <section id="projects" class="projects section">
+      <div class="container">
+        <h2 class="section-title fade-in">Projects</h2>
+        <div class="projects-grid">
+          
+          
+            <!-- card 1 -->
+
+          <article class="project-card fade-in">
+            <h3 class="project-title">mindful feed</h3>
+            <p class="project-desc">Content aggregator with sentiment filter – built with React, Node, and MongoDB. Reduces digital clutter.</p>
+            <div class="project-tech">React · Node.js · MongoDB</div>
+            <a href="#" class="project-link" target="_blank" rel="noopener">GitHub →</a>
+          </article>
+
+
+          <!-- card 2 -->
+           
+          <article class="project-card fade-in">
+            <h3 class="project-title">cyberdash</h3>
+            <p class="project-desc">Interactive dashboard for basic network logs. Visualizes packet data using vanilla JS and Chart.js (custom).</p>
+            <div class="project-tech">JavaScript · Chart.js · HTML/CSS</div>
+            <a href="#" class="project-link" target="_blank" rel="noopener">GitHub →</a>
+          </article>
+
+
+          <!-- card 3 -->
+
+          <article class="project-card fade-in">
+            <h3 class="project-title">auth‑flow</h3>
+            <p class="project-desc">Minimal authentication mockup with OOP structure (Python + Flask). Demonstrates secure session handling.</p>
+            <div class="project-tech">Python · Flask · OOP</div>
+            <a href="#" class="project-link" target="_blank" rel="noopener">GitHub →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+
+    <section id="contact" class="contact section">
+      <div class="container">
+        <h2 class="section-title fade-in">Contact</h2>
+        <div class="contact-wrapper fade-in">
+          <form id="demo-contact-form" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="you" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="say hi ..." required></textarea>
+            </div>
+            <button type="button" id="contact-submit-btn" class="btn btn-primary">send message</button>
+            <p id="form-feedback" class="form-feedback" aria-live="polite"></p>
+          </form>
+        </div>  
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Dewansh — built with semantic HTML, CSS, vanilla JS</p>
+    </div>
+  </footer>
+
+  <!-- single script file -->
+  <script src="script.js"></script>
+</body>
+</html>
